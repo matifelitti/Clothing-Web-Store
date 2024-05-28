@@ -16,7 +16,7 @@
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg bg-danger p-2 text-white bg-opacity-25">
     <div class="container-fluid">
-      <a class="navbar-brand p-3" href="#">Clothes.inc</a>
+      <a class="navbar-brand p-3 me-auto" href="#">Clothes.inc</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -60,17 +60,21 @@
             <a class="nav-link" href="#" id="magazine-link">MAGAZINE</a>
           </li>
         </ul>
-        <form class="d-flex col-4" role="search">
+        <form class="d-flex col-4 justify-content-center" role="search">
           <input class="form-control me-2 text-center border-danger shadow-none" type="search"
             placeholder="Search for intems and brands" aria-label="Search">
           <button class="btn btn-danger" type="submit">Search</button>
         </form>
         <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">ACCOUNT</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">CART</a>
+            <ul class="dropdown-menu" id="cartItem">
+              <li><a class="dropdown-item" href="#" id="cartItem"></a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">CART</a>
+            <a class="nav-link" aria-current="page" href="#">ACCOUNT</a>
           </li>
         </ul>
       </div>
@@ -108,88 +112,96 @@
   </div>
 
   <!-- images men's container  -->
-  <div class="h5 p-3 m-4 text-danger text-center">
-    Top Men's Products >
-  </div>
-
-  <div class="row pt-2 p-5 justify-content-center">
-    <div class="p-2 col-12 col-lg-4" style="width: 18rem;">
-      <img style="height: 300px" src="images/topmen1.jpeg" class="p-2 card-img-top rounded-circle" alt="image 1">
-      <div class="card-body bg-danger-subtle p-3 text-center">
-        <h5 class="card-title">Shirt</h5>
-        <p class="card-text">Brief description of the product.</p>
-        <a href="#" class="btn btn-danger">ADD TO CART !</a>
-      </div>
+  <div class="row pt-2 p-5 gx-0">
+    <div class="h5 p-3 m-4 text-danger text-center">
+      Top Men's Products >
     </div>
 
-    <div class="p-2 col-12 col-lg-4" style="width: 18rem;">
-      <img style="height: 300px" src="images/topmen2.jpeg" class="p-2 card-img-top rounded-circle" alt="image 2">
-      <div class="card-body bg-danger-subtle p-3 text-center">
-        <h5 class="card-title">Shirt</h5>
-        <p class="card-text">Brief description of the product.</p>
-        <a href="#" class="btn btn-danger">ADD TO CART !</a>
+    <div class="row pt-2 p-5 justify-content-center">
+      <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
+        <img style="width: 90%; height: 300px" src="images/topmen1.jpeg" class="p-2 card-img-top rounded-circle"
+          alt="image 1">
+        <div class="card-body bg-danger-subtle p-3 text-center">
+          <h5 class="card-title">Shirt</h5>
+          <p class="card-text">Brief description of the product.</p>
+          <a href="#" class="btn btn-danger" id="cartButton">ADD TO CART !</a>
+        </div>
       </div>
-    </div>
-    <div class="p-2 col-12 col-lg-4" style="width: 18rem;">
-      <img style="height: 300px" src="images/topmen3.jpeg" class="p-2 card-img-top rounded-circle" alt="image 3">
-      <div class="card-body bg-danger-subtle p-3 text-center">
-        <h5 class="card-title">Watch</h5>
-        <p class="card-text">Brief description of the product.</p>
-        <a href="#" class="btn btn-danger">ADD TO CART !</a>
+
+      <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
+        <img style="width: 90%; height: 300px" src="images/topmen2.jpeg" class="p-2 card-img-top rounded-circle"
+          alt="image 2">
+        <div class="card-body bg-danger-subtle p-3 text-center">
+          <h5 class="card-title">Shirt</h5>
+          <p class="card-text">Brief description of the product.</p>
+          <a href="#" class="btn btn-danger" id="cartButton">ADD TO CART !</a>
+        </div>
       </div>
-    </div>
-    <div class="p-2 col-12 col-lg-4" style="width: 18rem;">
-      <img style="height: 300px" src="images/topmen4.jpeg" class="p-2 card-img-top rounded-circle" alt="image 4">
-      <div class="card-body bg-danger-subtle p-3 text-center">
-        <h5 class="card-title">Facial Cream</h5>
-        <p class="card-text">Brief description of the product.</p>
-        <a href="#" class="btn btn-danger">ADD TO CART !</a>
+      <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
+        <img style="width: 90%; height: 300px" src="images/topmen3.jpeg" class="p-2 card-img-top rounded-circle"
+          alt="image 3">
+        <div class="card-body bg-danger-subtle p-3 text-center">
+          <h5 class="card-title">Watch</h5>
+          <p class="card-text">Brief description of the product.</p>
+          <a href="#" class="btn btn-danger" id="cartButton">ADD TO CART !</a>
+        </div>
       </div>
-    </div>
-  </div>
-  </div>
-
-
-  <!-- images women's container  -->
-  <div class="h5 p-3 m-4 text-danger text-center">
-    Top Women's Products >
-  </div>
-
-  <div class="row pt-2 p-5 justify-content-center">
-    <div class="p-2 col-12 col-lg-4" style="width: 18rem;">
-      <img style="height: 300px" src="images/topwomen1.jpeg" class="p-2 card-img-top rounded-circle" alt="image 1">
-      <div class="card-body bg-danger-subtle p-3 text-center">
-        <h5 class="card-title">Necklace</h5>
-        <p class="card-text">Brief description of the product.</p>
-        <a href="#" class="btn btn-danger">ADD TO CART !</a>
+      <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
+        <img style="width: 90%; height: 300px" src="images/topmen4.jpeg" class="p-2 card-img-top rounded-circle"
+          alt="image 4">
+        <div class="card-body bg-danger-subtle p-3 text-center">
+          <h5 class="card-title">Facial Cream</h5>
+          <p class="card-text">Brief description of the product.</p>
+          <a href="#" class="btn btn-danger" id="cartButton">ADD TO CART !</a>
+        </div>
       </div>
     </div>
 
-    <div class="p-2 col-12 col-lg-4" style="width: 18rem;">
-      <img style="height: 300px" src="images/topwomen2.jpeg" class="p-2 card-img-top rounded-circle" alt="image 2">
-      <div class="card-body bg-danger-subtle p-3 text-center">
-        <h5 class="card-title">Pants</h5>
-        <p class="card-text">Brief description of the product.</p>
-        <a href="#" class="btn btn-danger">ADD TO CART !</a>
+
+    <!-- images women's container  -->
+    <div class="h5 p-3 m-4 text-danger text-center">
+      Top Women's Products >
+    </div>
+
+    <div class="row pt-2 p-5 justify-content-center">
+      <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
+        <img style="width: 90%; height: 300px" src="images/topwomen1.jpeg" class="p-2 card-img-top rounded-circle"
+          alt="image 1">
+        <div class="card-body bg-danger-subtle p-3 text-center">
+          <h5 class="card-title">Necklace</h5>
+          <p class="card-text">Brief description of the product.</p>
+          <a href="#" class="btn btn-danger" id="cartButton">ADD TO CART !</a>
+        </div>
+      </div>
+
+      <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
+        <img style="width: 90%; height: 300px" src="images/topwomen2.jpeg" class="p-2 card-img-top rounded-circle"
+          alt="image 2">
+        <div class="card-body bg-danger-subtle p-3 text-center">
+          <h5 class="card-title">Pants</h5>
+          <p class="card-text">Brief description of the product.</p>
+          <a href="#" class="btn btn-danger" id="cartButton">ADD TO CART !</a>
+        </div>
+      </div>
+      <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
+        <img style="width: 90%; height: 300px" src="images/topwomen3.jpeg" class="p-2 card-img-top rounded-circle"
+          alt="image 3">
+        <div class="card-body bg-danger-subtle p-3 text-center">
+          <h5 class="card-title">Shirt</h5>
+          <p class="card-text">Brief description of the product.</p>
+          <a href="#" class="btn btn-danger" id="cartButton">ADD TO CART !</a>
+        </div>
+      </div>
+      <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
+        <img style="width: 90%; height: 300px" src="images/topwomen4.jpeg" class="p-2 card-img-top rounded-circle"
+          alt="image 4">
+        <div class="card-body bg-danger-subtle p-3 text-center">
+          <h5 class="card-title">Lipstick</h5>
+          <p class="card-text">Brief description of the product.</p>
+          <a href="#" class="btn btn-danger" id="cartButton">ADD TO CART !</a>
+        </div>
       </div>
     </div>
-    <div class="p-2 col-12 col-lg-4" style="width: 18rem;">
-      <img style="height: 300px" src="images/topwomen3.jpeg" class="p-2 card-img-top rounded-circle" alt="image 3">
-      <div class="card-body bg-danger-subtle p-3 text-center">
-        <h5 class="card-title">Shirt</h5>
-        <p class="card-text">Brief description of the product.</p>
-        <a href="#" class="btn btn-danger">ADD TO CART !</a>
-      </div>
-    </div>
-    <div class="p-2 col-12 col-lg-4" style="width: 18rem;">
-      <img style="height: 300px" src="images/topwomen4.jpeg" class="p-2 card-img-top rounded-circle" alt="image 4">
-      <div class="card-body bg-danger-subtle p-3 text-center">
-        <h5 class="card-title">Lipstick</h5>
-        <p class="card-text">Brief description of the product.</p>
-        <a href="#" class="btn btn-danger">ADD TO CART !</a>
-      </div>
-    </div>
-  </div>
   </div>
 
   <!-- Brands -->
