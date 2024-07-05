@@ -11,4 +11,4 @@ Welcome to Clothing Store, a web project built with HTML, CSS, JavaScript, and B
 
 ## Usage
 
-To use this project, simply clone the repository and open the `index.html` file in your web browser. From there, you can navigate through the different sections of the website using the navbar and explore the available clothing items.
+To use this project, simply clone the repository and open the `home.html` file in your web browser. From there, you can navigate through the different sections of the website using the navbar and explore the available clothing items.
