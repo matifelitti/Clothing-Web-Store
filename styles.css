@@ -10,6 +10,10 @@ body {
   color: white;
 }
 
+.carousel-item {
+  transition: transform 1.2s ease-in-out, opacity 1.2s ease-in-out;
+}
+
 .cart-product-image {
   width: 50px;
   height: 50px;
@@ -18,4 +22,15 @@ body {
 .cart-product-name {
   font-size: 12px;
   margin-left: 10px;
+}
+
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-fade.show {
+  opacity: 1;
+  transform: translateY(0);
 }
