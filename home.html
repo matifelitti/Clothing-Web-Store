@@ -60,20 +60,27 @@
             <a class="nav-link" href="#" id="magazine-link">MAGAZINE</a>
           </li>
         </ul>
-        <form class="d-flex col-4 justify-content-center" role="search">
+        <form class="d-flex me-3 col-4 justify-content-center" role="search">
           <input class="form-control me-2 text-center border-danger shadow-none" type="search"
             placeholder="Search for intems and brands" aria-label="Search">
           <button class="btn btn-danger" type="submit">Search</button>
         </form>
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">CART</a>
-            <ul class="dropdown-menu" id="cartItem">
-              <li><a class="dropdown-item" href="#" id="cartItem"></a></li>
+        <ul class="navbar-nav mb-2 mb-lg-0 me-4">
+          <li class="nav-item dropdown me-3">
+            <a class="nav-link dropdown-toggle position-relative" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              CART
+              <span id="cart-count"
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                0
+                <span class="visually-hidden">items in cart</span>
+              </span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" id="cartItem">
+              <li id="emptyCartMessage"><a class="dropdown-item" href="#">Your cart is empty</a></li>
             </ul>
           </li>
-          <li class="nav-item">
+          <li class="nav-item ms-3">
             <a class="nav-link" aria-current="page" href="#">ACCOUNT</a>
           </li>
         </ul>
@@ -125,7 +132,7 @@
         <div class="card-body bg-danger-subtle p-3 text-center">
           <h5 class="card-title">Shirt</h5>
           <p class="card-text">Brief description of the product.</p>
-          <a href="#" class="btn btn-danger" id="cartButton">ADD TO CART !</a>
+          <a href="#" class="btn btn-danger cart-button" id="cartButton">ADD TO CART !</a>
         </div>
       </div>
 
@@ -135,7 +142,7 @@
         <div class="card-body bg-danger-subtle p-3 text-center">
           <h5 class="card-title">Shirt</h5>
           <p class="card-text">Brief description of the product.</p>
-          <a href="#" class="btn btn-danger" id="cartButton">ADD TO CART !</a>
+          <a href="#" class="btn btn-danger cart-button" id="cartButton">ADD TO CART !</a>
         </div>
       </div>
       <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
@@ -144,7 +151,7 @@
         <div class="card-body bg-danger-subtle p-3 text-center">
           <h5 class="card-title">Watch</h5>
           <p class="card-text">Brief description of the product.</p>
-          <a href="#" class="btn btn-danger" id="cartButton">ADD TO CART !</a>
+          <a href="#" class="btn btn-danger cart-button" id="cartButton">ADD TO CART !</a>
         </div>
       </div>
       <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
@@ -153,7 +160,7 @@
         <div class="card-body bg-danger-subtle p-3 text-center">
           <h5 class="card-title">Facial Cream</h5>
           <p class="card-text">Brief description of the product.</p>
-          <a href="#" class="btn btn-danger" id="cartButton">ADD TO CART !</a>
+          <a href="#" class="btn btn-danger cart-button" id="cartButton">ADD TO CART !</a>
         </div>
       </div>
     </div>
@@ -171,7 +178,7 @@
         <div class="card-body bg-danger-subtle p-3 text-center">
           <h5 class="card-title">Necklace</h5>
           <p class="card-text">Brief description of the product.</p>
-          <a href="#" class="btn btn-danger" id="cartButton">ADD TO CART !</a>
+          <a href="#" class="btn btn-danger cart-button" id="cartButton">ADD TO CART !</a>
         </div>
       </div>
 
@@ -181,7 +188,7 @@
         <div class="card-body bg-danger-subtle p-3 text-center">
           <h5 class="card-title">Pants</h5>
           <p class="card-text">Brief description of the product.</p>
-          <a href="#" class="btn btn-danger" id="cartButton">ADD TO CART !</a>
+          <a href="#" class="btn btn-danger cart-button" id="cartButton">ADD TO CART !</a>
         </div>
       </div>
       <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
@@ -190,7 +197,7 @@
         <div class="card-body bg-danger-subtle p-3 text-center">
           <h5 class="card-title">Shirt</h5>
           <p class="card-text">Brief description of the product.</p>
-          <a href="#" class="btn btn-danger" id="cartButton">ADD TO CART !</a>
+          <a href="#" class="btn btn-danger cart-button" id="cartButton">ADD TO CART !</a>
         </div>
       </div>
       <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
@@ -199,7 +206,7 @@
         <div class="card-body bg-danger-subtle p-3 text-center">
           <h5 class="card-title">Lipstick</h5>
           <p class="card-text">Brief description of the product.</p>
-          <a href="#" class="btn btn-danger" id="cartButton">ADD TO CART !</a>
+          <a href="#" class="btn btn-danger cart-button" id="cartButton">ADD TO CART !</a>
         </div>
       </div>
     </div>

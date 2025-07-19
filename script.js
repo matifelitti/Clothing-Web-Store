@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const cartItem = document.getElementById("cartItem");
-  const cartButtons = document.querySelectorAll("#cartButton");
+  const cartButtons = document.querySelectorAll(".cart-button");
 
   cartButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -44,7 +44,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
       newItem.appendChild(productLink);
 
+      const emptyMessage = document.getElementById("emptyCartMessage");
+      if (emptyMessage) {
+        emptyMessage.remove();
+      }
+
       cartItem.appendChild(newItem);
+
+      const cartCount = document.getElementById("cart-count");
+      let currentCount = parseInt(cartCount.textContent);
+      cartCount.textContent = currentCount + 1;
     });
   });
 
