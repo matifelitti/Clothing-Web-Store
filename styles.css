@@ -15,6 +15,22 @@ body {
   color: white;
 }
 
+#cartItem .dropdown-item:hover .cart-product-name {
+  color: white !important;
+}
+
+#cartItem .dropdown-item:hover {
+  background-color: #dc3545 !important;
+}
+
+#cartItem .dropdown-item:hover .delete-icon {
+  filter: brightness(0) invert(1);
+}
+
+.delete-icon {
+  transition: filter 0.2s ease;
+}
+
 .carousel-item {
   transition: transform 1.2s ease-in-out, opacity 1.2s ease-in-out;
 }
@@ -27,6 +43,8 @@ body {
 .cart-product-name {
   font-size: 12px;
   margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
 
 .scroll-fade {
