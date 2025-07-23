@@ -60,23 +60,27 @@
             <a class="nav-link" href="#" id="magazine-link">MAGAZINE</a>
           </li>
         </ul>
-        <form class="d-flex me-3 col-4 justify-content-center" role="search">
-          <input class="form-control me-2 text-center border-danger shadow-none" type="search"
-            placeholder="Search for intems and brands" aria-label="Search">
-          <button class="btn btn-danger" type="submit">Search</button>
+        <form class="w-100 d-block d-lg-flex mx-4 my-2 my-lg-0 justify-content-center" role="search">
+          <div class="input-group">
+            <input class="form-control text-center border-danger shadow-none" type="search"
+              placeholder="Search for items and brands" aria-label="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
+          </div>
         </form>
+
         <ul class="navbar-nav mb-2 mb-lg-0 me-4">
           <li class="nav-item dropdown me-3">
             <a class="nav-link dropdown-toggle position-relative" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               CART
               <span id="cart-count"
-                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-none d-lg-inline">
                 0
                 <span class="visually-hidden">items in cart</span>
               </span>
             </a>
-            <ul class="dropdown-menu dropdown-menu-end" id="cartItem" style="min-width: 300px;">
+
+            <ul class="dropdown-menu dropdown-menu-end min-w-300" id="cartItem">
               <li id="emptyCartMessage"><span class="dropdown-item">Your cart is empty</span></li>
             </ul>
           </li>
@@ -126,9 +130,8 @@
     </div>
 
     <div class="row pt-2 p-5 justify-content-center">
-      <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
-        <img style="width: 90%; height: 300px" src="images/topmen1.jpeg"
-          class="p-2 card-img-top rounded-circle scroll-fade" alt="image 1">
+      <div class="p-2 col-12 col-lg-4 mw-18">
+        <img src="images/topmen1.jpeg" class="p-2 card-img-top rounded-circle scroll-fade max-h-300" alt="image 1">
         <div class="card-body bg-danger-subtle p-3 text-center">
           <h5 class="card-title">Shirt</h5>
           <p class="card-text">Brief description of the product.</p>
@@ -136,27 +139,26 @@
         </div>
       </div>
 
-      <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
-        <img style="width: 90%; height: 300px" src="images/topmen2.jpeg"
-          class="p-2 card-img-top rounded-circle scroll-fade" alt="image 2">
+      <div class="p-2 col-12 col-lg-4 mw-18">
+        <img src="images/topmen2.jpeg" class="p-2 card-img-top rounded-circle scroll-fade max-h-300" alt="image 2">
         <div class="card-body bg-danger-subtle p-3 text-center">
           <h5 class="card-title">Shirt</h5>
           <p class="card-text">Brief description of the product.</p>
           <a href="#" class="btn btn-danger cart-button">ADD TO CART !</a>
         </div>
       </div>
-      <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
-        <img style="width: 90%; height: 300px" src="images/topmen3.jpeg"
-          class="p-2 card-img-top rounded-circle scroll-fade" alt="image 3">
+
+      <div class="p-2 col-12 col-lg-4 mw-18">
+        <img src="images/topmen3.jpeg" class="p-2 card-img-top rounded-circle scroll-fade max-h-300" alt="image 3">
         <div class="card-body bg-danger-subtle p-3 text-center">
           <h5 class="card-title">Watch</h5>
           <p class="card-text">Brief description of the product.</p>
           <a href="#" class="btn btn-danger cart-button">ADD TO CART !</a>
         </div>
       </div>
-      <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
-        <img style="width: 90%; height: 300px" src="images/topmen4.jpeg"
-          class="p-2 card-img-top rounded-circle scroll-fade" alt="image 4">
+
+      <div class="p-2 col-12 col-lg-4 mw-18">
+        <img src="images/topmen4.jpeg" class="p-2 card-img-top rounded-circle scroll-fade max-h-300" alt="image 4">
         <div class="card-body bg-danger-subtle p-3 text-center">
           <h5 class="card-title">Facial Cream</h5>
           <p class="card-text">Brief description of the product.</p>
@@ -165,16 +167,14 @@
       </div>
     </div>
 
-
     <!-- images women's container  -->
     <div class="h5 p-3 m-4 text-danger text-center">
       Top Women's Products >
     </div>
 
     <div class="row pt-2 p-5 justify-content-center">
-      <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
-        <img style="width: 90%; height: 300px" src="images/topwomen1.jpeg"
-          class="p-2 card-img-top rounded-circle scroll-fade" alt="image 1">
+      <div class="p-2 col-12 col-lg-4 mw-18">
+        <img src="images/topwomen1.jpeg" class="p-2 card-img-top rounded-circle scroll-fade max-h-300" alt="image 5">
         <div class="card-body bg-danger-subtle p-3 text-center">
           <h5 class="card-title">Necklace</h5>
           <p class="card-text">Brief description of the product.</p>
@@ -182,27 +182,26 @@
         </div>
       </div>
 
-      <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
-        <img style="width: 90%; height: 300px" src="images/topwomen2.jpeg"
-          class="p-2 card-img-top rounded-circle scroll-fade" alt="image 2">
+      <div class="p-2 col-12 col-lg-4 mw-18">
+        <img src="images/topwomen2.jpeg" class="p-2 card-img-top rounded-circle scroll-fade max-h-300" alt="image 6">
         <div class="card-body bg-danger-subtle p-3 text-center">
           <h5 class="card-title">Pants</h5>
           <p class="card-text">Brief description of the product.</p>
           <a href="#" class="btn btn-danger cart-button" id="cartButton">ADD TO CART !</a>
         </div>
       </div>
-      <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
-        <img style="width: 90%; height: 300px" src="images/topwomen3.jpeg"
-          class="p-2 card-img-top rounded-circle scroll-fade" alt="image 3">
+
+      <div class="p-2 col-12 col-lg-4 mw-18">
+        <img src="images/topwomen3.jpeg" class="p-2 card-img-top rounded-circle scroll-fade max-h-300" alt="image 7">
         <div class="card-body bg-danger-subtle p-3 text-center">
           <h5 class="card-title">Shirt</h5>
           <p class="card-text">Brief description of the product.</p>
           <a href="#" class="btn btn-danger cart-button">ADD TO CART !</a>
         </div>
       </div>
-      <div class="p-2 col-12 col-lg-4" style="max-width: 18rem; width: 100%;">
-        <img style="width: 90%; height: 300px" src="images/topwomen4.jpeg"
-          class="p-2 card-img-top rounded-circle scroll-fade" alt="image 4">
+
+      <div class="p-2 col-12 col-lg-4 mw-18">
+        <img src="images/topwomen4.jpeg" class="p-2 card-img-top rounded-circle scroll-fade max-h-300" alt="image 8">
         <div class="card-body bg-danger-subtle p-3 text-center">
           <h5 class="card-title">Lipstick</h5>
           <p class="card-text">Brief description of the product.</p>
@@ -236,7 +235,8 @@
     <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
       <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
         <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Clothes.inc Magazine</h1>
-        <p class="lead">The Clothes.inc Magazine experience is about helping you find your perfect style, no matter the
+        <p class="lead">The Clothes.inc Magazine experience is about helping you find your perfect style, no matter
+          the
           size, age or occasion. Shop our range now.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
           <button type="button" class="btn btn-danger btn-lg px-4 me-md-2 fw-bold">Suscribe</button>
@@ -278,7 +278,8 @@
           <h5>SUPPORT</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Returns & Exchanges</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Returns & Exchanges</a>
+            </li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Shipping</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms & Conditions</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>

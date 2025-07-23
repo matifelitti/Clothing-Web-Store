@@ -47,6 +47,20 @@ body {
   transition: color 0.2s ease;
 }
 
+.min-w-300 {
+  min-width: 300px;
+}
+
+.max-h-300 {
+  width: 90%;
+  height: 270px;
+}
+
+.mw-18 {
+  max-width: 18rem;
+  width: 100%;
+}
+
 .scroll-fade {
   opacity: 0;
   transform: translateY(40px);
