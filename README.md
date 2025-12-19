@@ -17,8 +17,8 @@ To explore the Clothing Store:
 
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/matifelitti/clothing-store.git
-   cd clothing-store
+   git clone https://github.com/matifelitti/Clothing-Web-Store.git
+   cd Clothing-Store
    ```
 2. **Open the Project**
    - Locate the `home.html` file.
